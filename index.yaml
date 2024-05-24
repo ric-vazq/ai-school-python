@@ -1,0 +1,341 @@
+---
+course:
+  name: 'AI School - Python for AI'
+  number: MASTER
+  version: '1.0' 
+  chapter:
+    - name: '!Content Examples'
+      sequential:
+        - name: 'Lesson Example'
+          vertical:
+            - name: "Intro to EDA & Univariate Analysis"
+              component:
+                - type: html
+                  file: content-examples/example-lesson-intro-eda.md
+        - name: 'Lab Example'
+          vertical:
+            - name: "[LAB] Interfaces and Abstract Classes"
+              component:
+                - type: html
+                  file: content-examples/example-lab-interfaces.md
+
+    - name: 'Tips & tricks for success'
+      sequential:
+        - name: 'Info tab'
+          vertical:
+            - name: '[EXTRA] Code of Conduct during the bootcamp'
+              component:
+                - type: html
+                  file: info/code-of-conduct.md
+            - name: '[EXTRA] Link to  the GitHub class organization'
+              component:
+                - type: html
+                  file: info/gh-class-org.md
+            - name: '[EXTRA] Guidelines on how to submit the labs'
+              component:
+                - type: html
+                  file: info/guidelines-labs.md
+            - name: '[EXTRA] No class dates'
+              component:
+                - type: html
+                  file: info/no-class-dates.md
+            - name: '[EXTRA] Contacts'
+              component:
+                - type: html
+                  file: info/contacts.md
+            - name: '[EXTRA] Career Services'
+              component:
+                - type: html
+                  file: info/career.md
+            - name: '[EXTRA] Technical interview prep'
+              component:
+                - type: html
+                  file: other/tech-interviews.md
+            - name: '[EXTRA] Upcoming events'
+              component:
+                - type: html
+                  file: info/events.md
+
+        - name: 'Module 1'
+          vertical:
+            - name: '[EXTRA] Time distribution'
+              component:
+                - type: html
+                  file: info/ft-time-dist-m1.md
+            - name: '[EXTRA] Module 1 - topics - overview'
+              component:
+                - type: html
+                  file: info/topics-m1.md
+            - name: '[EXTRA] Expectations'
+              component:
+                - type: html
+                  file: info/expectations.md
+            - name: '[EXTRA] Requirements for win-win'
+              component:
+                - type: html
+                  file: info/requirements-m1.md
+        - name: 'Module 2'
+          vertical:
+            - name: '[EXTRA] Time distribution'
+              component:
+                - type: html
+                  file: info/ft-time-dist-m2.md
+            - name: '[EXTRA] Module 2 - topics - overview'
+              component:
+                - type: html
+                  file: info/topics-m2.md
+            - name: '[EXTRA] Expectations'
+              component:
+                - type: html
+                  file: info/expectations.md
+            - name: '[EXTRA] Requirements for win-win'
+              component:
+                - type: html
+                  file: info/requirements-m2.md
+        - name: 'Module 3'
+          vertical:
+            - name: '[EXTRA] Time distribution'
+              component:
+                - type: html
+                  file: info/ft-time-dist-m3.md
+            - name: '[EXTRA] Module 3 - topics - overview'
+              component:
+                - type: html
+                  file: info/topics-m3.md
+            - name: '[EXTRA] Expectations'
+              component:
+                - type: html
+                  file: info/expectations.md
+            - name: '[EXTRA] Requirements for win-win'
+              component:
+                - type: html
+                  file: info/requirements-m3.md
+
+    - name: 'Week 1'
+      sequential:
+        - name: 'Day 1' ##### M1 - W1 - D1 #####
+          vertical:
+            - name: 'Welcome Presentation & Class Guidelines'
+              component:
+                - type: html
+                  file: info/welcome-presentation.md
+
+            - name: 'Problem Solving and Support'
+              component:
+                - type: html
+                  file: other/problem-solving-and-support.md
+
+            - name: 'HTML | Introduction'
+              component:
+                - type: html
+                  file: module-1/week-1/html-intro.md
+            - name: 'CSS | Intro & Selectors'
+              component:
+                - type: html
+                  file: module-1/week-1/css-intro.md
+            - name: 'CSS | Box Model'
+              component:
+                - type: html
+                  file: module-1/week-1/css-box-model.md
+            - name: 'VCS | Git Intro'
+              component:
+                - type: html
+                  file: module-1/week-1/self-guided/git-intro.md
+            - name: '[LAB] LAB | CSS Recipes clone' # mandatory lab
+              component:
+                - type: html
+                  file: module-1/labs/lab-css-recipes-clone.md
+                - type: deliverable
+                  display_name: recipes-clone
+                  deliverable_identifier: lab-css-recipes-clone
+                  deliverable_description: Submit the url to your work here.
+                  deliverable_duedate: ''
+            - name: '[EXTRA] CSS | Transitions & Animations'
+              component:
+                - type: html
+                  file: module-1/week-1/css-transitions-animations.md
+            - name: '[EXTRA] LAB | CSS Spotify clone' # extra lab
+              component:
+                - type: html
+                  file: module-1/labs/lab-css-spotify-clone.md
+                # - type: deliverable
+                #   display_name: spotify-clone
+                #   deliverable_identifier: lab-css-spotify-clone
+                #   deliverable_description: Submit the url to your work here.
+                #   deliverable_duedate: ''
+            - name: '[EXTRA] Support: The Central Teaching Assistant'
+              component:
+                - type: html
+                  file: other/support-the-central-teaching-assistant.md
+
+        - name: 'Day 2' ##### M1 - W1 - D2 #####
+          vertical:
+            - name: 'CSS | Advanced Selectors'
+              component:
+                - type: html
+                  file: module-1/week-1/css-advanced-selectors.md
+            - name: 'CSS | Responsive Web Design'
+              component:
+                - type: html
+                  file: module-1/week-1/css-responsive-design.md
+            - name: 'CSS | Flexbox'
+              component:
+                - type: html
+                  file: module-1/week-1/css-flexbox.md
+            - name: '[SELF_GUIDED] CSS | Positioning'
+              component:
+                - type: html
+                  file: module-1/week-1/css-positioning.md
+            - name: 'Pair Programming Introduction'
+              component:
+                - type: html
+                  file: module-1/week-1/self-guided/pair-programming.md
+            - name: 'Lab Collaboration - Guided Example'
+              component:
+                - type: html
+                  file: other/lab-collab.md
+            - name: '[LAB] LAB | CSS Flexbox Slack' # mandatory lab
+              component:
+                - type: html
+                  file: module-1/labs/lab-css-flexbox-slack.md
+                - type: deliverable
+                  display_name: css-flexbox-slack
+                  deliverable_identifier: lab-css-flexbox-slack
+                  deliverable_description: Submit the url to your work here.
+                  deliverable_duedate: ''
+            - name: '[EXTRA] LAB | CSS Instagram clone' # extra lab
+              component:
+                - type: html
+                  file: module-1/labs/lab-css-instagram-clone.md
+                # - type: deliverable
+                #   display_name: instagram-clone
+                #   deliverable_identifier: lab-css-instagram-clone
+                #   deliverable_description: Submit the url to your work here.
+                #   deliverable_duedate: ''
+
+        - name: 'Day 3' ##### M1 - W1 - D3 #####
+          vertical:
+            - name: 'JS | JavaScript Intro'
+              component:
+                - type: html
+                  file: module-1/week-1/js-intro.md
+            - name: 'JS | Data Types - numbers & strings'
+              component:
+                - type: html
+                  file: module-1/week-1/js-datatypes-1.md
+            - name: 'JS | Numbers - Advanced Topics'
+              component:
+                - type: html
+                  file: module-1/week-1/numbers-advanced.md
+            - name: 'JS | Data Types - boolean, undefined & null'
+              component:
+                - type: html
+                  file: module-1/week-1/js-datatypes-2.md
+            - name: 'JS | Conditionals and Loops'
+              component:
+                - type: html
+                  file: module-1/week-1/js-conditionals-loops.md
+            - name: '[LAB] LAB | JavaScript Basic Algorithms' # mandatory lab
+              component:
+                - type: html
+                  file: module-1/labs/lab-javascript-basic-algorithms.md
+                - type: deliverable
+                  display_name: basic-algorithms
+                  deliverable_identifier: lab-javascript-basic-algorithms
+                  deliverable_description: Submit the url to your work here.
+                  deliverable_duedate: ''
+
+        - name: 'Day 4' ##### M1 - W1 - D4 #####
+          vertical:
+            - name: '[CLASS_ACTIVITY] Lab Review'
+              component:
+                - type: html
+                  file: other/lab-reviews/lab-reviews-guide.md
+            - name: 'JS | Functions Intro'
+              component:
+                - type: html
+                  file: module-1/week-1/js-functions-intro.md
+            - name: 'JS | Data Types - Arrays'
+              component:
+                - type: html
+                  file: module-1/week-1/js-arrays.md
+            - name: '[LAB] LAB | JavaScript Functions and Arrays' # mandatory lab
+              component:
+                - type: html
+                  file: module-1/labs/lab-javascript-functions-and-arrays.md
+                - type: deliverable
+                  display_name: functions-and-arrays
+                  deliverable_identifier: lab-javascript-functions-and-arrays
+                  deliverable_description: Submit the url to your work here.
+                  deliverable_duedate: ''
+            - name: 'JS | Data Types - Objects'
+              component:
+                - type: html
+                  file: module-1/week-1/js-objects.md
+            - name: 'JS | Arrays & Objects'
+              component:
+                - type: html
+                  file: module-1/week-1/js-objects-arrays.md
+            - name: '[LAB] LAB | JavaScript Clue' # mandatory lab
+              component:
+                - type: html
+                  file: module-1/labs/lab-javascript-clue.md
+                - type: deliverable
+                  display_name: clue
+                  deliverable_identifier: lab-javascript-clue
+                  deliverable_description: Submit the url to your work here.
+                  deliverable_duedate: ''
+
+        - name: 'Day 5' ##### M1 - W1 - D5 #####
+          vertical:
+            - name: '[ASSESSMENT] Announcement: JS Foundations (202208)'
+              component:
+                - type: html
+                  file: other/assessment-announcement.md
+            # QUALIFIED ASSESSMENT
+            - name: '![ASSESSMENT] JS Foundations (202208)'
+              component:
+                - type: html
+                  file: other/assessment-warning-and-link-to-faqs.md
+                - type: deliverable
+                  display_name: NA
+                  deliverable_identifier: 62fca1f4b4104add41a88b9e
+                  deliverable_description: NA
+                  deliverable_duedate: ''
+                  deliverable_required: true
+                  deliverable_cutscore: 60 # 🚨 needs to be manually updated on studio 🚨
+            - name: "JS | OOP - objects, methods and the 'this' keyword"
+              component:
+                - type: html
+                  file: module-1/week-1/js-oop-1.md
+            - name: 'JS | OOP - class and inheritance'
+              component:
+                - type: html
+                  file: module-1/week-1/js-oop-2.md
+            - name: '[SELF_GUIDED] JS | Special keyword - this'
+              component:
+                - type: html
+                  file: module-1/week-1/js-keyword-this.md
+            - name: '[LAB] LAB | JavaScript Vikings' # mandatory lab
+              component:
+                - type: html
+                  file: module-1/labs/lab-javascript-vikings.md
+                - type: deliverable
+                  display_name: vikings
+                  deliverable_identifier: lab-javascript-vikings
+                  deliverable_description: Submit the url to your work here.
+                  deliverable_duedate: ''
+            - name: '[EXTRA] JS | OOP - Function constructor vs. Class'
+              component:
+                - type: html
+                  file: module-1/week-1/js-oop-3.md
+            - name: '[SELF_GUIDED] JS | Debugging and Error Handling'
+              component:
+                - type: html
+                  file: module-1/week-2/js-debugging.md
+            - name: '![RITUALS] Semi-module retrospective'
+              component:
+                - type: html
+                  file: 'other/module-retro.md'
+
+    ######################################################################################
