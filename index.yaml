@@ -1,9 +1,10 @@
 ---
 course:
-  name: 'AI School - Python for AI'
+  name: 'AI School - Python for AI (202406)'
   number: MASTER
-  version: '1.0' 
+  version: 1.0
   chapter:
+
     - name: '!Content Examples'
       sequential:
         - name: 'Lesson Example'
@@ -19,5 +20,89 @@ course:
                 - type: html
                   file: content-examples/example-lab-interfaces.md
 
-    - name: 'Week 1'
+    - name: Week 1
       sequential:
+        - name: Day 1
+          vertical:
+            - name: Intro to Python
+              component:
+                - type: html
+                  file: week-1/day-1/01-lesson-intro-to-python.md
+            - name: '[LAB] LAB | Dicts, Sets, and Tuples' # mandatory lab
+              component:
+                - type: html
+                  file: week-1/day-1/lab-dict-sets-tuple/README-exported.md
+                - type: deliverable
+                  display_name: lab-dict-sets-tuple-en
+                  deliverable_identifier: lab-dict-sets-tuple-en
+                  deliverable_description: "Submit the url to your work here: "
+                  deliverable_duedate: ''
+                  deliverable_required: true
+                  deliverable_cutscore: 0
+                  deliverable_type: url_type
+
+        - name: Day 2
+          vertical:
+            - name: Flow control
+              component:
+                - type: html
+                  file: week-1/day-2/01-lesson-flow-control.md
+            - name: '[LAB] LAB | for loops and if conditions' # mandatory lab
+              component:
+                - type: html
+                  file: week-1/day-2/lab-control-flow/README-exported.md
+                - type: deliverable
+                  display_name: lab-control-flow-en
+                  deliverable_identifier: lab-control-flow-en
+                  deliverable_description: "Submit the url to your work here: "
+                  deliverable_duedate: ''
+                  deliverable_required: true
+                  deliverable_cutscore: 0
+                  deliverable_type: url_type
+
+
+# #########################
+
+    - name: Week 2
+      sequential:
+        - name: Day 1
+          vertical:
+            - name: Functions
+              component:
+                - type: html
+                  file: week-1/day-1/01-lesson-intro-to-python.md
+            - name: '[LAB] LAB | Functions' # mandatory lab
+              component:
+                - type: html
+                  file: week-2/day-1/lab-functions/README-exported.md
+                - type: deliverable
+                  display_name: lab-functions-en
+                  deliverable_identifier: lab-functions-en
+                  deliverable_description: "Submit the url to your work here: "
+                  deliverable_duedate: ''
+                  deliverable_required: true
+                  deliverable_cutscore: 0
+                  deliverable_type: url_type
+
+            - name: Object-oriented Programming
+              component:
+                - type: html
+                  file: week-2/day-1/02-lesson-oop.md
+
+            - name: Comprehension lists
+              component:
+                - type: html
+                  file: week-2/day-1/03-lesson-comprehension-lists.md
+            - name: '[LAB] LAB | List Comprehensions' # mandatory lab
+              component:
+                - type: html
+                  file: week-2/day-1/lab-list-comprehension/README-exported.md
+                - type: deliverable
+                  display_name: lab-list-comprehension-en
+                  deliverable_identifier: lab-list-comprehension-en
+                  deliverable_description: "Submit the url to your work here: "
+                  deliverable_duedate: ''
+                  deliverable_required: true
+                  deliverable_cutscore: 0
+                  deliverable_type: url_type
+

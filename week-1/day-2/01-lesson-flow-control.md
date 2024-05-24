@@ -1,5 +1,8 @@
+<!-- # Flow control -->
+
 ## Learning Outcomes
-Upon completion of this lesson, you will be able to:
+
+By the end of this session, you will be able to:
 
 - Use if-else statements to control the flow of execution in a program based on conditions.
 - Use loops to repeat actions in a program.
@@ -7,7 +10,9 @@ Upon completion of this lesson, you will be able to:
 - Apply flow control statements to solve real-world programming problems.
 
 
-## Hands on Lesson
-The Jupyter Notebooks for this lesson are available here:
-- [Python - Flow Control I]()
-- [Python - Flow Control II]()
+## Lesson
+
+The complete Hands On Lesson(s) can be found here: 
+
+- [Python - Flow Control I](https://github.com/ironhack-edu/ai-school-py-public-nbs/blob/master/02-flow-control-I.ipynb)
+- [Python - Flow Control II](https://github.com/ironhack-edu/ai-school-py-public-nbs/blob/master/03-flow-control-II.ipynb)
