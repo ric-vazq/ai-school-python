@@ -1,71 +1,89 @@
 #1. Import the NUMPY package under the name np.
 
-#[your code here]
+import numpy as np
 
 
 #2. Print the NUMPY version and the configuration.
 
-#[your code here]
+print(np.__version__)
+np.show_config()
 
 
 #3. Generate a 2x3x5 3-dimensional array with random values. Assign the array to variable "a"
 # Challenge: there are at least three easy ways that use numpy to generate random arrays. How many ways can you find?
 
-#[your code here]
+a = np.random.rand(2, 3, 5)
 
 #4. Print a.
 
-#[your code here]
+print("a", a)
+
 #5. Create a 5x2x3 3-dimensional array with all values equaling 1.
 #Assign the array to variable "b"
 
-#[your code here]
+b = np.random.choice([1], (5, 2, 3))
 
 #6. Print b.
 
-#[your code here]
+print("b", b)
 
 #7. Do a and b have the same size? How do you prove that in Python code?
 
-#[your code here]
+print(a.size == b.size)
+#prints true hence they have the same size (not necessarily the same shape though)
 
-#8. Are you able to add a and b? Why or why not?
+#8. Are you able to add a and b? Why or why not? 
 
-#[your code here]
+#c = a + b
+#print(c)
+# numpy could not properly broadcast of a+b because they do not have the same shape and dimensions. The only method to add them together would be transposing them. 
 
 
 #9. Transpose b so that it has the same structure of a (i.e. become a 2x3x5 array). Assign the transposed array to varialbe "c".
 
-#[your code here]
+c = np.transpose(b, (1, 2, 0))
+print("c", c)
 
 #10. Try to add a and c. Now it should work. Assign the sum to varialbe "d". But why does it work now?
 
-#[your code here]
+d = a + c
+print("d", d)
+# this works now because numpy can now correctly broadcast the values of each position due to the matrixes sharing a shape. 
 
 #11. Print a and d. Notice the difference and relation of the two array in terms of the values? Explain.
 
-#[your code here]
+print("a",a)
+print("d",d)
 
 
 #12. Multiply a and c. Assign the result to e.
 
-#[your code here]
+e = a * c
+print("e", e)
 
 
 #13. Does e equal to a? Why or why not?
 
-#[your code here]
+print(e == a)
+#returns true because c is just an array full of 1s and anything multiplied by 1 is itself. In this case the multiplication of e=a*c resulted in e = a * 1. 
 
 
 
 #14. Identify the max, min, and mean values in d. Assign those values to variables "d_max", "d_min", and "d_mean"
 
-#[your code here]
+d_max = np.max(d)
+# or d_max = d.max()
+d_min = np.min(d)
+#or d_min = d.min()
+d_mean = np.mean(d)
+# or d_mean = d.mean()
 
+print(d_max, d_min, d_mean)
 
 #15. Now we want to label the values in d. First create an empty array "f" with the same shape (i.e. 2x3x5) as d using `np.empty`.
 
-#[your code here]
+f = np.empty((2, 3, 5))
+print("f", f)
 
 
 """
@@ -78,10 +96,11 @@ In the end, f should have only the following values: 0, 25, 50, 75, and 100.
 Note: you don't have to use Numpy in this question.
 """
 
-#[your code here]
-
-
-
+f[(d > d_min) & (d < d_mean)] = 25
+f[(d > d_mean) & (d < d_max)] = 75
+f[d == d_mean] = 50
+f[d == d_min] = 0
+f[d == d_max] = 100
 
 """
 #17. Print d and f. Do you have your expected f?
@@ -103,8 +122,8 @@ array([[[ 75.,  75.,  75.,  25.,  75.],
         [ 75.,  75.,  75.,  75.,  75.],
         [ 25.,  75.,   0.,  75.,  75.]]])
 """
-
-#[your code here]
+print("d", d)
+print("f", f)
 
 
 
@@ -120,5 +139,19 @@ array([[[ 'D',  'D',  'D',  'B',  'D'],
         [ 'B',  'D',   'A',  'D', 'D']]])
 Again, you don't need Numpy in this question.
 """
+f = np.empty(d.shape, dtype= 'U1')
+label_map =    {
+    0: "A",
+    25: "B",
+    50: "C",
+    75: "D",
+    100: "E"
+}
 
-#[your code here]
+f[(d > d_min) & (d < d_mean)] = label_map[25]
+f[(d > d_mean) & (d < d_max)] = label_map[75]
+f[d == d_mean] = label_map[50]
+f[d == d_min] = label_map[0]
+f[d == d_max] = label_map[100]
+
+print("f", f)
